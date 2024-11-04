@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+
+    <style>
+        body 
+        {
+            font-family: "Times New Roman", sans-serif;
+            background: linear-gradient(270deg, #e6f88c, #b3e6ff, #ffcccb); /* Gradient background */
+            background-size: 600% 600%; /* Make the gradient larger for animation */
+            animation: gradientAnimation 5s ease infinite; /* Apply animation */
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center align content */
+            cursor: none; /* Hide default cursor */
+        }
+
+        @keyframes gradientAnimation 
+        {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        h1 
+        {
+            text-align: center;
+            color: #030303;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-bottom: 20px; /* Space below the heading */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+        }
+
+        .profile
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 20px; /* Added padding for spacing */
+            border-radius: 15px; /* Rounded corners */
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+        }
+
+        .profile-image 
+        {
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            margin-right: 20px;
+            box-shadow: 0 0 15px rgba(70, 221, 24, 0.3); /* Enhanced shadow */
+            transition: transform 0.3s ease; /* Smooth scaling */
+        }
+
+        .info
+        {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease; /* Smooth background change */
+        }
+
+        .info h2
+        {
+            margin: 0;
+            color: #333;
+            font-family: cursive;
+        }
+
+        .info p 
+        {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        .social-link 
+        {
+            color: #2008f0;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease; /* Smooth color change */
+        }
+
+        .social-link:hover 
+        {
+            text-decoration: underline;
+            color: #ff5722; /* Change color on hover */
+        }
+
+        .profile-image:hover 
+        {
+            transform: scale(1.1); /* Scale effect on hover */
+        }
+
+        .info:hover 
+        {
+            background-color: #e3cffd; /* Change background on hover */
+        }
+
+        .custom-cursor {
+            position: fixed;
+            width: 20px; /* Size of the cursor */
+            height: 20px; /* Size of the cursor */
+            background-color: rgba(255, 165, 0, 0.8); /* Color of the cursor */
+            border-radius: 50%; /* Make it circular */
+            pointer-events: none; /* Prevent interference with mouse events */
+            transition: transform 0.1s ease; /* Smooth movement */
+            will-change: transform; /* Optimize for performance */
+            box-shadow: 0 0 30px rgba(25, 255, 64, 0.8), 0 0 20px rgba(255, 165, 0, 0.6); /* Glow effect */
+        }
+        .icon 
+        {
+            width: 20px; /* Adjust size as needed */
+            height: 20px; /* Adjust size as needed */
+            vertical-align: middle; /* Align icon with text */
+            margin-right: 5px; /* Space between icon and text */
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Personal Information</h1>
+    <div class="profile">
+        <img src="2024051114494398.jpg" alt="Photo" class="profile-image">
+        <div class="info">
+            <h2><strong>Kisshane Laika S. Benoya</strong></h2>
+            <p> 
+                <image src="icons8-calendar-add-24.png" alt="Age Icon" class="icon"></image>
+                <strong>21</strong>
+            </p>
+            <p>
+                <img src="icons8-hobbies-50.png" alt="Hobbies Icon" class="icon">
+                <strong>Reading, Traveling, Eating</strong> 
+            </p>
+            <p>
+                <img src="icons8-graduation-cap-48.png" alt="School Icon" class="icon"> 
+                <strong>3rd Year</strong> 
+            </p>
+            <p>
+                <img src="icons8-graduation-cap-48.png" alt="School Icon" class="icon"> 
+                <strong>Asian College of Technology</strong> 
+            </p>
+            <p>
+                <img src="icons8-quote-64.png" alt="Quote Icon" class="icon"> 
+                <strong>"Develop success from failures. Discouragement and failure are two of the surest stepping stones to success."</strong>
+            </p>
+            <p>
+                <img src="icons8-email-100.png" alt="Emai Icon" class="icon">
+                <a href="https://mail.google.com/mail/u/0/#inbox" class="social-link">Email Profile</a>
+            </p>
+            <p>
+                <img src="icons8-facebook-48.png" alt="Facebook Icon" class="icon">
+                <a href="https://www.facebook.com/laikabenoya" class="social-link">Facebook Profile</a>
+            </p>
+            <p>
+                <img src="icons8-youtube-100.png" alt="Youtube Icon" class="icon">
+                <a href="https://www.youtube.com/results?search_query=kisshane+laika+benoya" class="social-link">Youtube Profile</a>
+            </p>
+
+        </div>
+    </div class="custom-cursor">
+    <div>
+
+    </div>
+</body>
+</html>
+
+      
